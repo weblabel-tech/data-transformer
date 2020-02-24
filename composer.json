@@ -1,0 +1,30 @@
+{
+    "name": "weblabel/data-transformer",
+    "description": "This library provides object-oriented interface for decoding string formats (e.g. JSON) into an array",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Kowalski",
+            "email": "adam.kowalski@weblabel.pl"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "ext-json": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "phpstan/phpstan": "^0.12.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Weblabel\\DataTransformer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Weblabel\\DataTransformer\\Tests\\": "tests/"
+        }
+    }
+}
