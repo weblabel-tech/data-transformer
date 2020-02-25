@@ -18,7 +18,6 @@ Open a command console, enter your project directory and execute:
 $ composer require weblabel/data-transformer
 ```
 
-
 Basic Usage
 ===========
 ```php
