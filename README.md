@@ -1,10 +1,6 @@
 Data Transformer
 ============
 
-[![Build Status](https://travis-ci.org/weblabel-tech/data-transformer.svg?branch=master)](https://travis-ci.org/weblabel-tech/data-transformer)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/weblabel-tech/data-transformer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/weblabel-tech/data-transformer/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/weblabel-tech/data-transformer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/weblabel-tech/data-transformer/?branch=master)
-
 Installation
 ============
 
