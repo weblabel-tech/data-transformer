@@ -1,7 +1,7 @@
 Data Transformer
 ============
 
-![Build Status](https://github.com/weblabel-tech/data-transformer/actions/workflows/testsuite.yml/badge.svg)
+[![Github CI](https://github.com/weblabel-tech/data-transformer/actions/workflows/testsuite.yml/badge.svg)](https://github.com/weblabel-tech/data-transformer/actions/workflows/testsuite.yml)
 
 Installation
 ============
