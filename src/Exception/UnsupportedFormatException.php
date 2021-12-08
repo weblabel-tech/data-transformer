@@ -11,6 +11,6 @@ class UnsupportedFormatException extends RuntimeException
      */
     public static function forFormat(string $format): self
     {
-        return new self(\sprintf('Unsupported format "%s"', $format));
+        return new self(sprintf('Unsupported format "%s"', $format));
     }
 }

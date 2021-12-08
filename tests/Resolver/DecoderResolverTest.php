@@ -11,14 +11,14 @@ use Weblabel\DataTransformer\Resolver\DecoderResolver;
 
 class DecoderResolverTest extends TestCase
 {
-    public function test_decoder_resolving_for_non_supported_format()
+    public function testDecoderResolvingForNonSupportedFormat()
     {
         $this->expectException(UnsupportedFormatException::class);
         $decoderResolver = new DecoderResolver([]);
         $decoderResolver->resolve('json');
     }
 
-    public function test_decoder_resolving()
+    public function testDecoderResolving()
     {
         $xmlDecoder = $this->createMock(DecoderInterface::class);
         $xmlDecoder

@@ -19,9 +19,9 @@ final class JsonDecoder implements DecoderInterface
     public function decode(string $data): array
     {
         try {
-            return \json_decode($data, true, self::RECURSION_DEPTH, \JSON_THROW_ON_ERROR);
+            return json_decode($data, true, self::RECURSION_DEPTH, \JSON_THROW_ON_ERROR);
         } catch (\JsonException $e) {
-            throw new InvalidPayloadException(\sprintf('Cannot decode payload. Error: %s', $e->getMessage()));
+            throw new InvalidPayloadException(sprintf('Cannot decode payload. Error: %s', $e->getMessage()));
         }
     }
 

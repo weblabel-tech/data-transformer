@@ -10,7 +10,7 @@ use Weblabel\DataTransformer\DecoderInterface;
 
 class FieldDecoderTraitTest extends TestCase
 {
-    public function test_decoding_of_array_fields()
+    public function testDecodingOfArrayFields()
     {
         $fieldDecoder = $this->getMockForTrait(FieldDecoderTrait::class);
         $decoder = $this->createMock(DecoderInterface::class);
@@ -46,7 +46,7 @@ class FieldDecoderTraitTest extends TestCase
         );
     }
 
-    public function test_skipping_nonexisting_field()
+    public function testSkippingNonexistingField()
     {
         $fieldDecoder = $this->getMockForTrait(FieldDecoderTrait::class);
         $decoder = $this->createMock(DecoderInterface::class);

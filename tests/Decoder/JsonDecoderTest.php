@@ -12,7 +12,7 @@ class JsonDecoderTest extends TestCase
 {
     private JsonDecoder $jsonDecoder;
 
-    public function test_that_decoder_supports_json_format()
+    public function testThatDecoderSupportsJsonFormat()
     {
         self::assertTrue($this->jsonDecoder->supports('json'));
     }
@@ -20,19 +20,19 @@ class JsonDecoderTest extends TestCase
     /**
      * @dataProvider nonJsonFormatDataProvider
      */
-    public function test_that_decoder_doesnt_support_non_json_format(string $format)
+    public function testThatDecoderDoesntSupportNonJsonFormat(string $format)
     {
         self::assertFalse($this->jsonDecoder->supports($format));
     }
 
-    public function test_decoding_json_payload()
+    public function testDecodingJsonPayload()
     {
         $result = $this->jsonDecoder->decode('{"foo": "bar"}');
 
         self::assertSame(['foo' => 'bar'], $result);
     }
 
-    public function test_decoding_with_invalid_json_payload()
+    public function testDecodingWithInvalidJsonPayload()
     {
         $this->expectException(InvalidPayloadException::class);
 

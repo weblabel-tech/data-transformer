@@ -8,7 +8,6 @@ use Weblabel\DataTransformer\DecoderInterface;
 
 trait FieldDecoderTrait
 {
-    /** @var DecoderInterface */
     private DecoderInterface $decoder;
 
     public function decodeFields(array $data, array $fields): array
